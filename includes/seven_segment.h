@@ -79,7 +79,8 @@ void seven_segment_init() {
     for (unsigned int i = 0; i < ALL_SEGMENTS_COUNT; i++) {
         gpio_init(ALL_SEGMENTS[i]);
         gpio_set_dir(ALL_SEGMENTS[i], GPIO_OUT);
-    }    
+    }
+    printf("Welcome to morse-pico!");
 }
 
 /* Turn off the seven-segment display. */

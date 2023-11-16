@@ -37,6 +37,10 @@ int main() {
 	gpio_set_dir(BUTTON_PIN, GPIO_IN);
 	gpio_pull_down(BUTTON_PIN); // Pull the button pin towards ground (with an internal pull-down resistor).
 
+	seven_segment_show(36);
+	sleep_ms(500);
+	seven_segment_off();
+
 	while (true) {
 
 		while (gpio_get(BUTTON_PIN)){			
